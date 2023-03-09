@@ -1,19 +1,27 @@
-<header>
-  <h1>My Summer</h1>
-</header>
+<body>
+  <header>
+    <h1>My Summer</h1>
+  </header>
 
-<main>
-  <h2>Summer 2021/22</h2>
-  <h3>During my summer, I teleported to pandora and lived my life as an avatar.</h3>
-  <p>What I did:</p>
-  <ul>
-    <li>Read lots</li>
-    <li>Called lots</li>
-    <li>Played lots of chess</li>
-  </ul>
-  <a href="https://mondrianandme.com/">art </a>
-</main>
+  <main>
+    <h2>Summer 2021/22</h2>
+    <h3>During my summer, I teleported to pandora and lived my life as an avatar.</h3>
+    <p>What I did:</p>
+    <ul>
+      <li>Read lots</li>
+      <li>Called lots</li>
+      <li>Played lots of chess</li>
+    </ul>
+    <a href="https://mondrianandme.com/">art </a>
+    <img src="img_mahima.jpg.jpg" />
+    <img src="img_haseeb.jpg.jpg" />
+    <img src="img_adeeb.jpg.jpg" />
+  </main>
 
+  <footer>
+    <p>&copy; Your Name 2023</p>
+  </footer>
+</body>
 <style>
   h1 {
     background-color: #fbacbe;
@@ -78,8 +86,22 @@
     width: 20rem;
     border-radius: 5%;
   }
-</style>
+  body {
+    display: grid;
+    grid:
+      " h    h  h" auto
+      " m   m   f " auto
+      " m  m   f  " auto
+      / auto auto auto;
+  }
 
-<img src="img_mahima.jpg.jpg" />
-<img src="img_haseeb.jpg.jpg" />
-<img src="img_adeeb.jpg.jpg" />
+  header {
+    grid-area: h;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+</style>
