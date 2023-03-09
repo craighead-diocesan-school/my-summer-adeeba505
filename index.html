@@ -12,14 +12,16 @@
       <li>Called lots</li>
       <li>Played lots of chess</li>
     </ul>
-    <a href="https://mondrianandme.com/">art </a>
-    <img src="img_mahima.jpg.jpg" />
-    <img src="img_haseeb.jpg.jpg" />
-    <img src="img_adeeb.jpg.jpg" />
+    <div>
+      <a href="https://mondrianandme.com/">art </a>
+      <img src="img_mahima.jpg.jpg" />
+      <img src="img_haseeb.jpg.jpg" />
+      <img src="img_adeeb.jpg.jpg" />
+    </div>
   </main>
 
   <footer>
-    <p>&copy; Your Name 2023</p>
+    <p>&copy; Adeeba 2023</p>
   </footer>
 </body>
 <style>
@@ -83,15 +85,21 @@
     background-color: yellow;
   }
   img {
-    width: 20rem;
+    height: 10rem;
     border-radius: 5%;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 30;
   }
   body {
     display: grid;
     grid:
-      " h    h  h" auto
-      " m   m   f " auto
-      " m  m   f  " auto
+      " h  h  h" auto
+      " m   m   f" auto
+      " m  m   f " auto
       / auto auto auto;
   }
 
